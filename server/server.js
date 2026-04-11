@@ -2,6 +2,7 @@ import express from 'express';
 import cors from "cors"
 import "dotenv/config";
 import connectDB from './configs/db.js';
+import userRouter from './routes/userRoutes.js';
 
 
 const app = express();
@@ -20,6 +21,7 @@ app.use(cors(corsOptions))
 app.get('/', (req, res) => {
     res.send('Server is Live!');
 });
+app.use('/api/users',userRouter);
 
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
