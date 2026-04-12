@@ -1,0 +1,9 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/Masum0895/Ai_Resume_Builder.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
