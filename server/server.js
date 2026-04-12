@@ -9,6 +9,7 @@ import resumeRouter from './routes/resumeRoutes.js';
 const app = express();
 const port = process.env.PORT || 3001;
 
+// Database connection
 await connectDB();
 
 const corsOptions = {
